@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -768,7 +769,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">✉️</div>
-                    <span>contacto@iamanos.com</span>
+                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7b4b8b9a3b6b4a3b897beb6bab6b9b8a4f9b4b8ba">[email&#160;protected]</a></span>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
@@ -791,7 +792,7 @@
         <p>&copy; 2026 Target Instalaciones POP | Sistema de Optimización de Rutas</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Scroll Reveal Animation
         function reveal() {
             const reveals = document.querySelectorAll('.reveal');
@@ -827,4 +828,12 @@
         // Add fade-in animation to hero elements
         document.addEventListener('DOMContentLoaded', () => {
             const heroElements = document.querySelectorAll('.hero-content > *');
-  
+            heroElements.forEach((element, index) => {
+                element.classList.add('fade-in-up');
+                element.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
+           
